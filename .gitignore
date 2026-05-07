@@ -1,0 +1,32 @@
+# =========================
+# Ambientes Virtuais Python
+# =========================
+venv/
+env/
+.venv/
+
+# =========================
+# Cache e Compilação do Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+# Banco de Dados Local (SQLite)
+# =========================
+*.db
+*.sqlite3
+
+# =========================
+# Configurações do VS Code e Editores
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Arquivos do Sistema Operacional
+# =========================
+.DS_Store
+Thumbs.db
