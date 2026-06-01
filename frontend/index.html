@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Irrigação - Pato Branco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Clima e Irrigação</h1>
+            <p>Pato Branco, PR</p>
+            <p id="data-atual" class="data-destaque">Carregando data...</p>
+        </header>
+
+        <div class="card weather-card">
+            <h2>Condição Atual</h2>
+            <div class="weather-data">
+                <div class="data-point">
+                    <span class="label">Temperatura:</span>
+                    <span class="value" id="temp-atual">--°C</span>
+                </div>
+                <div class="data-point">
+                    <span class="label">Sensação Térmica:</span>
+                    <span class="value" id="sensacao-atual">--°C</span>
+                </div>
+                <div class="data-point">
+                    <span class="label">Umidade do Ar:</span>
+                    <span class="value" id="umidade-atual">--%</span>
+                </div>
+                <div class="data-point">
+                    <span class="label">Probabilidade de Chuva:</span>
+                    <span class="value" id="prob-chuva">--%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card hourly-card">
+            <h2>Previsão nas Próximas Horas</h2>
+            <div class="hourly-container" id="previsao-horaria">
+                </div>
+        </div>
+
+        <div class="card system-card">
+            <h2>Decisão Atual do Sistema</h2>
+            <div class="data-point">
+                <span class="label">Status da Irrigação:</span>
+                <span class="value status-badge" id="status-irrigacao">Aguardando...</span>
+            </div>
+            <p id="alerta-sistema" class="alerta-texto"></p>
+        </div>
+
+        <div class="card history-card">
+            <h2>Histórico de Análises (Backend)</h2>
+            <div class="table-responsive">
+                <table id="tabela-historico">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Solo Seco</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
